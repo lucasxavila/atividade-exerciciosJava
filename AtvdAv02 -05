@@ -24,10 +24,10 @@ public class Main
       if (paisB < 0) {
         System.out.println("O número de habitantes inválido. Informe novamente: ");
       }
-      if (paisB < paisA) {
+      if (paisB <= paisA) {
         System.out.println("O número de habitantes do país B deve ser maior ou igual ao país A. Informe novamente: ");
       }
-    } while (paisB < 0);
+    } while (paisB < 0 || paisB <= paisA);
 
     System.out.print("Digite a taxa de crescimento do país A: ");
     if (scanner.hasNextDouble()) {
